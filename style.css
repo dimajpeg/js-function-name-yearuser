@@ -1,22 +1,60 @@
-form{
+/* Общие стили */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #d3e0ff);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  gap: 1rem;
-  font-size: 2rem;
+  margin: 0;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Стили форм */
+form {
+  background-color: white;
+  padding: 20px 30px;
+  margin: 15px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Поля ввода */
+input {
+  padding: 12px;
+  border: 2px solid #aabbee;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #5c77ff;
+  outline: none;
+}
+
+/* Кнопки */
+button {
+  padding: 12px;
+  background-color: #5c77ff;
   color: white;
-  font-weight: 700;
-  text-transform: uppercase;
-  background-color: #a0a0a0;
-  text-align: center;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
-  max-width: 600px;
-  width: 100%;
-  box-sizing: border-box;
-  
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #4055d4;
+  transform: scale(1.03);
 }
